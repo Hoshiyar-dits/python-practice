@@ -85,3 +85,117 @@ A dictionary is a collection which is unordered, changeable and indexed. In Pyth
 ```python
 my_dict = {"name": "Alice", "age": 30, "city": "New York"}
 ```
+
+# 17. Python If-Else Statements
+If-else statements are used for conditional execution of code blocks. The syntax is as follows:
+```python
+if condition:
+    # code block to execute if condition is true
+else:
+    # code block to execute if condition is false
+```
+
+# 18. Python Match Case Statements
+Match-case statements are used for pattern matching in Python. They allow you to match a value against different patterns and execute code based on the match. The syntax is as follows:
+```python
+match value:
+    case pattern1:
+        # code block to execute if value matches pattern1
+    case pattern2:
+        # code block to execute if value matches pattern2
+    case _:
+        # code block to execute if value does not match any pattern
+```    
+
+# 19. Python Loops
+Python supports two main types of loops: `for` loops and `while` loops.
+- `for` loops are used to iterate over a sequence (like a list, tuple, or string) and execute a block of code for each item in the sequence.
+```python
+for item in sequence:
+    # code block to execute for each item
+```
+- `while` loops are used to execute a block of code as long as a specified condition is true.
+```python
+while condition:
+    # code block to execute while condition is true 
+```
+
+# 20. Python Functions
+A function is a block of code that performs a specific task and can be reused throughout the program. Functions are defined using the `def` keyword, followed by the function name and parentheses. The syntax is as follows:
+```python
+def function_name(parameters):
+    # code block to execute
+    return value  # optional
+```
+
+# 21. Python Classes and Objects
+Python is an object-oriented programming language, which means it allows you to create classes and objects.
+- A class is a blueprint for creating objects. It defines the properties and behaviors that the objects created from the class will have.
+- An object is an instance of a class. It is created using the class constructor and can access the properties and methods defined in the class.
+```python
+class MyClass:
+    def __init__(self, property1, property2):
+        self.property1 = property1
+        self.property2 = property2
+
+    def my_method(self):
+        # code block to execute
+        return self.property1 + self.property2
+```
+
+# 22. Python Inheritance
+Inheritance is a feature of object-oriented programming that allows a class (called the child class or subclass) to inherit properties and methods from another class (called the parent class or superclass). This allows for code reuse and the creation of a hierarchical relationship between classes.
+```python
+class ParentClass:
+    def __init__(self, property1):
+        self.property1 = property1
+    
+    def parent_method(self):
+        return self.property1
+    
+class ChildClass(ParentClass):
+    def __init__(self, property1, property2):
+        super().__init__(property1)  # Call the constructor of the parent class
+        self.property2 = property2  
+    
+    def child_method(self):
+        return self.property1 + self.property2
+```
+
+# 23. Python Polymorphism
+Polymorphism is a feature of object-oriented programming that allows objects of different classes to be treated as objects of a common superclass. It allows for methods to be defined in different classes with the same name but with different implementations. This enables the same method to behave differently based on the object that is calling it.
+```python
+class Animal:
+    def sound(self):
+        pass
+    
+    def make_sound(self):
+        return self.sound()
+
+class Dog(Animal):
+    def sound(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow!"
+# Example usage:
+dog = Dog()
+cat = Cat()
+print(dog.make_sound())  # Output: Woof!
+print(cat.make_sound())  # Output: Meow!   
+```
+
+# 24. Python Encapsulation
+Encapsulation is a feature of object-oriented programming that restricts access to the internal state and behavior of an object. It allows you to hide the implementation details of a class and expose only the necessary methods and properties to the outside world. This helps to protect the integrity of the object's data and prevents unintended modifications.
+```python
+class MyClass:
+    def __init__(self, property1):
+        self.__property1 = property1  # Private property
+
+    def get_property1(self):
+        return self.__property1  # Public method to access the private property
+    
+    def set_property1(self, value):
+        self.__property1 = value  # Public method to modify the private property
+``` 
