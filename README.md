@@ -23,15 +23,13 @@ A casting is converting a datatype to another data type like int to float or flo
 The text written inside double quote or single quote is known as string.
 
 # 9. String methods in python ?
-  str = "Hello"
+some of the commonly used string methods in Python are:
+1. `len()`: Returns the length of the string.
+2. `lower()`: Converts the string to lowercase.
+3. `upper()`: Converts the string to uppercase.
+4. `strip()`: Removes leading and trailing whitespace from the string.
+5. `replace(old, new)`: Replaces occurrences of a substring with another substring.
 
-  String length - len()  - print(len(str))  - 5
-  Upper case - upper()  -  print(str.upper())  -  HELLO
-  Lower case - lower()  -  print(str.lower())  - hello
-  Remove whitespace - strip() -> print(str.stripe())   - it removes the space from start point and end point of string
-  Replace string - replace() -> print(str.replace("H","J"))  - Jello
-  Split string - split() - print(str.split(","))  - convert string to list (array)
-  String count - count()  - print(str.count())
 
 # 10. How to concatenation works in python ?
 Concatenation is the operation of joining two strings together. In Python, we can concatenate strings using the `+` operator.
@@ -53,14 +51,13 @@ formatted_string = "My name is {} and I am {} years old.".format(name, age)
 
 # 12. Python Operators
 python supports various types of operators, including:
-    1. Arithmetic Operators: +, -, *, /, %, **, //
-    2. Comparison Operators: ==, !=, >, <, >=, <=
-    3. Logical Operators: and, or, not
-    4. Assignment Operators: =, +=, -=, *=, /=, %=, **=, //=
-    5. Bitwise Operators: &, |, ^, ~, <<, >>
-    6. Membership Operators: in, not in
-    7. Identity Operators: is, is not
-    8. Ternary Operator: A shorthand for an if-else statement, written as `value_if_true if condition else value_if_false`.
+1. Arithmetic operators: `+`, `-`, `*`, `/`, `%`, `**`, `//`
+2. Comparison operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
+3. Logical operators: `and`, `or`, `not`
+4. Assignment operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `**=`, `//=`
+5. Bitwise operators: `&`, `|`, `^`, `~`, `<<`, `>>`
+6. Membership operators: `in`, `not in`
+7. Identity operators: `is`, `is not`
 
 # 13. Python Lists
 A list is a collection which is ordered and changeable. In Python lists are written with square brackets. Lists can contain items of different data types, including other lists. eg-
